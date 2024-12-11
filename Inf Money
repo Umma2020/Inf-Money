@@ -1,0 +1,12 @@
+game.Players.PlayerAdded:Connect(function(player)
+    -- Create leaderstats
+    local leaderstats = Instance.new("Folder")
+    leaderstats.Name = "leaderstats"
+    leaderstats.Parent = player
+
+    -- Create a "Money" stat
+    local money = Instance.new("IntValue")
+    money.Name = "Money"
+    money.Value = 999999999 -- Set initial money to an extremely high value
+    money.Parent = leaderstats
+end)
